@@ -15,18 +15,6 @@ public class InPlaceSorts {
                 }
             }
         }}
-    public static void swap(int[]arr,int a, int b){
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-    }
-
-    public static void swapdouble(double[]arr,int a, int b) {
-        double temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-    }
-
     public static void selectionSort(double [] arr){
         int minPos = 0;
         for (int curPos = 0; curPos < arr.length; curPos++){
@@ -40,6 +28,29 @@ public class InPlaceSorts {
             }
         }
     }
+    public static void InsertionSort(int [] arr){
+        for (int i = 0; i<arr.length;i++){
+            for(int j = i; j>1; j--){
+                if (arr[j]<arr[j-1]){
+                    swap(arr,i,j-1);}
+                else {
+                    break;
+                }
+            }
+        }
+    }
+    public static void swap(int[]arr,int a, int b){
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+
+    public static void swapdouble(double[]arr,int a, int b) {
+        double temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+
     public static int[] randIntArr(int count){
         int[] num = new int[count];
         for(int i = 0; i < count; i++){
@@ -70,17 +81,7 @@ public class InPlaceSorts {
         return arr;
     }
 
-    public static void InsertionSort(int [] arr){
-        for (int i = 0; i<arr.length;i++){
-            for(int j = i; j>1; j--){
-                if (arr[j]<arr[j-1]){
-                    swap(arr,i,j-1);}
-                    else {
-                    break;
-                }
-                }
-            }
-        }
+
      public static int[] copyIntArr(int[] arr){
         int [] copyArr = new int[arr.length];
         for (int i = 0; i < arr.length; i++){
