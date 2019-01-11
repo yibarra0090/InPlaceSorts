@@ -67,4 +67,17 @@ public class InPlaceSorts {
         return arr;
     }
 
+    public static void InsertionSort(double [] arr){
+        for (int i = 0; i<arr.length;i++){
+            for(int j = i; j>1; j--){
+                if (arr[j]<arr[j-1]){
+                    swap(arr,i,j-1);}
+                    else {
+                    break;
+                }
+                }
+            }
+        }
+    }
+
 }
