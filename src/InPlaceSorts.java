@@ -81,6 +81,27 @@ public class InPlaceSorts {
                 }
             }
         }
+     public static int[] copyIntArr(int[] arr){
+        int [] copyArr = new int[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            copyArr[i] = arr[i];
+        }
+        return copyArr;
+     }
+    public static double[] copyDoubleArr(double[] arr){
+        double [] copyArr = new double[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            copyArr[i] = arr[i];
+        }
+        return copyArr;
     }
+    public static String[] copyStirngArr(String[] arr){
+        String [] copyArr = new String[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            copyArr[i] = arr[i];
+        }
+        return copyArr;
+    }
+}
 
 
