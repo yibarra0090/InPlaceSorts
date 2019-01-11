@@ -50,7 +50,11 @@ public class InPlaceSorts {
         arr[a] = arr[b];
         arr[b] = temp;
     }
-
+    public static void swapString(String[]arr,int a, int b) {
+        String temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
     public static int[] randIntArr(int count){
         int[] num = new int[count];
         for(int i = 0; i < count; i++){
