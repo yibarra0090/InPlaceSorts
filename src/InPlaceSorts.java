@@ -15,7 +15,13 @@ public class InPlaceSorts {
                 }
             }
         }}
-    public static void swap(double[]arr,int a, int b){
+    public static void swap(int[]arr,int a, int b){
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+
+    public static void swapdouble(double[]arr,int a, int b) {
         double temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
@@ -30,7 +36,7 @@ public class InPlaceSorts {
                     minVal = arr[nextPos];
                     minPos = nextPos;
                 }
-                swap(arr, minPos, curPos);
+                swapdouble(arr, minPos, curPos);
             }
         }
     }
@@ -64,7 +70,7 @@ public class InPlaceSorts {
         return arr;
     }
 
-    public static void InsertionSort(double [] arr){
+    public static void InsertionSort(int [] arr){
         for (int i = 0; i<arr.length;i++){
             for(int j = i; j>1; j--){
                 if (arr[j]<arr[j-1]){
