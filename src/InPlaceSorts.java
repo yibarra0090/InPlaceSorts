@@ -1,4 +1,5 @@
 public class InPlaceSorts {
+    //SORTING ALG
     public static void sortStringBubble( String [] arr) {
         int i;
         boolean check = true;  // will determine when the sort is finished
@@ -39,6 +40,8 @@ public class InPlaceSorts {
             }
         }
     }
+
+    //SWAP
     public static void swap(int[]arr,int a, int b){
         int temp = arr[a];
         arr[a] = arr[b];
@@ -55,6 +58,8 @@ public class InPlaceSorts {
         arr[a] = arr[b];
         arr[b] = temp;
     }
+
+    //Random Generators
     public static int[] randIntArr(int count){
         int[] num = new int[count];
         for(int i = 0; i < count; i++){
@@ -85,7 +90,7 @@ public class InPlaceSorts {
         return arr;
     }
 
-
+    //Copy
      public static int[] copyIntArr(int[] arr){
         int [] copyArr = new int[arr.length];
         for (int i = 0; i < arr.length; i++){
