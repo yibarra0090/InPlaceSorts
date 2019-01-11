@@ -48,9 +48,6 @@ public class InPlaceSorts {
         }
         return  num;
     }
-
-
-
     public String [] randomStringArr(int num, int length){
         String [] arr = new String [num];
         while (num > 0){
@@ -80,4 +77,4 @@ public class InPlaceSorts {
         }
     }
 
-}
+
