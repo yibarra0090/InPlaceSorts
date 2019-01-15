@@ -33,7 +33,7 @@ public class Runner {
 
         System.out.print("BUBBLE SORT");
         System.out.println();
-        String [] StringList = InPlaceSorts.randomStringArr(3,1);
+        String [] StringList = InPlaceSorts.randomStringArr(10,1);
         String [] oldStringList = InPlaceSorts.copyStirngArr(StringList);
         long time2 = System.nanoTime();
         for (String num: StringList){
